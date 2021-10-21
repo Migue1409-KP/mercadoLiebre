@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/images/logo-mercado-liebre.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
@@ -14,22 +15,22 @@
     </head>
     <body>
         <header>
-            <section>
+            <div class="header-top">
                 <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 <form action="#">
                     <input type="search" name="qu" placeholder="Buscar prodcutos, marcas">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            </section>
+                <p class="header-text" ><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
             <nav>
-                <ul>
+                <ul class="header-nav">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <ul>
+                <ul class="header-user">
                     <li><a href="/register">Creá tu cuenta<i class="fas fa-user-plus"></i></a></li>
                     <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
@@ -42,9 +43,9 @@
         <section class = "img-home-banner">
             <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>
-        <main>
+        <main class="mainHome">
+            <h3>Basado en tu última visita</h3>
             <section>
-                <h3>Basado en tu última visita</h3>
                 <article>
                         <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
                         <div class="text-card-product">    
@@ -82,8 +83,8 @@
                     </div>
                 </article>
             </section>
+            <h3>Ofertas</h3>
             <section>
-                <h3>Ofertas</h3>
                 <article>
                     <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
                     <div class="text-card-product">

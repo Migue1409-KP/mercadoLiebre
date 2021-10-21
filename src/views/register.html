@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/logo-mercado-liebre.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5d64a4e77d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            <form action="#">
+                <input type="search" name="qu" placeholder="Buscar prodcutos, marcas">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <p class="header-text" ><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="header-user">
+                <li><a href="/register">Creá tu cuenta<i class="fas fa-user-plus"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main class="mainUser">
+        <section class="userRegister">
+            <h2>Registrarse</h2>
+            <form action="">
+                <h3>Datos de usuario</h3>
+                <input class="medForm" name="name-LastName" type="text" placeholder="Nombre y apellido" required>
+                <input class="medForm" name="nameUser" type="text" placeholder="Nombre de usuario" required>
+                <label for="dateBirth" class="medForm">Fecha de nacimiento: </label>
+                <input class="medForm" name="dateBirth" id="dateBirth" type="date" required>
+                <input class="bigForm" name="email" type="email" placeholder="Correo electronico" required>
+                <label for="dateBirth">Imagen de perfil: </label>
+                <input class="bigForm" name="imgProfile" id="dateBirth" type="file" required>
+                <input class="medForm" name="password" type="password" placeholder="Contraseña" required>
+                <input class="medForm" name="passwordConfirm" type="password" placeholder="Confirmar contraseña" required>
+                
+                <h3>Domicilio</h3>
+                <input class="medForm" name="country" type="text" placeholder="Pais" required>
+                <input class="medForm" name="state" type="text" placeholder="Departamento" required>
+                <input class="medForm" name="city" type="text" placeholder="Ciudad" required>
+                <input class="medForm" name="address" type="text" placeholder="Dirección" required>
+                
+                <h3>Tipo de usuario</h3>
+                <div class="optionsForm">
+                    <input type="radio" name="userRol" id="userBuyer" value="buyer" class="radioForm">
+                    <label for="userBuyer">Comprador</label>
+                </div>
+                <div class="optionsForm">
+                    <input type="radio" name="userRol" id="userSeller" value="seller" class="radioForm">
+                    <label for="userSeller">Vendedor</label>
+                </div>
+                <h3>Intereses</h3>
+                <div class="optionsForm">                    
+                    <input type="checkbox" name="userInterests" id="electro" value="electro" class="radioForm">
+                    <label for="electro" class="labelOptions">Electro</label>
+                </div>
+                <div class="optionsForm">                    
+                    <input type="checkbox" name="userInterests" id="electro" value="moda" class="radioForm">
+                    <label for="moda" class="labelOptions">Moda</label>
+                </div>
+                <div class="optionsForm">                    
+                    <input type="checkbox" name="userInterests" id="home" value="moda" class="radioForm">
+                    <label for="home" class="labelOptions">Hogar</label>
+                </div>
+                <div class="optionsForm">                    
+                    <input type="checkbox" name="userInterests" id="electro" value="moda" class="radioForm">
+                    <label for="moda" class="labelOptions">Jugueteria</label>
+                </div>
+                <div class="optionsForm">                    
+                    <input type="checkbox" name="lifeStyle" id="lifeStyle" value="lifeStyle" class="radioForm">
+                    <label for="lifeStyle" class="labelOptions">Vida Sana</label>
+                </div>
+                <button type="reset" class="medForm">Borrar</button>
+                <button type="submit" class="medForm">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <i class="fas fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>
+                Con MercadoLiebreCash tenés cuotas sin 
+                interes con tarjeta o efectivo en puntos de
+                pago. ¡Y siempre es seguro!
+            </p>
+        </section>
+        <section>
+            <i class="fas fa-gift"></i>
+            <h4>Envío gratis desde los $ 2.500</h4>
+            <p>
+                Sólo por estar registrad@ en MercadoLiebre
+                tenés envíos gratis en miles de productos. Es
+                un beneficio de MercadoPuntos
+            </p>
+        </section>
+        <section>
+            <i class="fas fa-user-shield"></i>
+            <h4>Seguridad de principio a fin</h4>
+            <p>
+                ¿No te gusta? ¡Devolvelo! En MercadoLiebre
+                no hay nada de que no puedes hacer porque
+                estás siempre protegid@
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

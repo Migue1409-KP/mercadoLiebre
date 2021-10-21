@@ -1,35 +1,88 @@
 *{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    box-sizing: border-box;
-    justify-content:center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
 }
 
 body{
     width:100%;
+    background: #ebebeb;
 }
 
 /* HEADER */
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
     width: 100%;
     background:#EAC926;
     color:black;
+    padding: 1% 3%;
 }
 
-header section form input{
-    width:25%;
+header .header-top{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header section p{
-    text-align: center;
+header .header-top p{
+    align-self: center; 
 }
 
-header section{
-    padding: 2%;
+header .header-top img{
+    width: 20%;
+    flex-grow: 0.3;
+}
+header .header-top form{
+    flex-grow: 0.3;
+    width: 30vw;
 }
 
-header section img{
-    width:45%;
+header .header-top form{
+    width:50%;
+}
+
+header .header-top form input{
+    width: 75%;
+    height: 5vh;
+    border-radius: 1rem;
+    border: 0px;
+    padding: 1%;
+}
+
+header .header-top form button{
+    border: 0px;
+    width: 3vw;
+    height: 3vh;
+ 
+    background-color: rgba(0,0,0,0)
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.header-nav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.header-user{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
 }
 
 header nav ul{
@@ -38,10 +91,12 @@ header nav ul{
 
 header nav ul li{
     text-decoration: none;
+    margin-right: 10%;
 }
 
-header nav i{
-    margin-bottom: 1%;
+header nav ul li i{
+    position: relative;
+    left: 5%;
 }
 
 header nav a{
@@ -50,56 +105,109 @@ header nav a{
 }
 
 .burger-menu{
-    visibility: hidden;
+    display: none;
 }
 /* HEADER FINAL */
 
+/* FOOTER */
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1%;
+    color: #666;
+}
+
+footer section{
+    text-align: center;
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+footer i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+footer h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer p{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer section i:hover{
+    color: #0022AA;
+}
+
+/* FOOTER FINAL */
+
+/* Sessions */
+
+/* Home */
 /* MAIN */
 section img{
     width:100%;
 }
 
-main{
+main.mainHome{
     width: 90vw;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-main section{
-    background: #ebebeb;
-    margin: 0 auto;
+main.mainHome section{
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 1%;
+    justify-content: center;
 }
 
-main section h3{
+main.mainHome h3{
     font-size: 24px;
     padding: 2%;
     color: #666;
 }
 
-main section article{
-    margin: 0 auto;
+main.mainHome section article{
+    width: 20%;
     margin-bottom: 3%;
     background-color: white;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    border-radius:5%;
+    margin-left: 3%;
+    margin-right: 2%;
 }
 
-main section article img{
+main.mainHome section article img{
     display:block;
     margin: 0 auto;
-    width: 50vw;
+    width: 80%;
 }
 
-main section article i{
-    color:#39b54a;
-    justify-content: center;
-    padding: 3px;
-    border: #1259c3 1px solid;
-    border-radius: 100%;
+main.mainHome section article i{
+    display: block ;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
-main section article h4{
+main.mainHome section article h4{
+    visibility: hidden;
     font-size: 16px;
     margin:0px;
     padding-top: 1%;
@@ -121,77 +229,270 @@ main section article h4{
 .text-card-product{
     padding: 1% 0px 1% 1%;
     border-top: #ebebeb 1px solid;
+    position: relative;
 }
 
-/* MAIN FINAL */
+main.mainHome section article:hover h4{
+    visibility: visible;
+}
 
-/* FOOTER */
-footer{
+main.mainHome section article:hover{
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+main.mainHome section article i:hover{
+    transform: rotate(-90deg);
+    transition:all 0.4s;
+}
+
+/* main.mainHome FINAL */
+/* Home Final */
+
+/* login and register */
+/* MAIN */
+main.mainUser{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 0;
+    display: flex;
     justify-content: center;
-    padding: 0px 20%;
-    margin: 0px;
-    color: #666;
 }
 
-footer section{
+main.mainUser section h2{
+    font-size: 2.5em;
+    width: 100%;
     text-align: center;
 }
 
-footer i{
-    color: blue;
-    font-size: 2em;
-    margin-bottom: 10px;
-    margin-top: 30px;
+main.mainUser section form{
+    padding-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-footer h4{
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px;
+main.mainUser section form input{
+    width: 100%;
+    height: 5vh;
+    margin: 5% 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 3%;
 }
 
-footer p{
-    padding: 0px;
-    margin: 0px;
+main.mainUser section form button{
+    width: 100%;
+    margin-top: 5%;
+    height: 5vh;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
 }
-/* FOOTER FINAL */
+
+/* register */
+main.mainUser section.userRegister{
+    width: 100%;
+}
+
+main.mainUser section.userRegister form{
+    justify-content: space-between;
+}
+
+.userRegister form h3{
+    font-size: 1.5em;
+    width: 100%;
+    margin: 2% 0%;
+}
+
+main.mainUser section.userRegister form{
+    padding-top: 5%;
+}
+
+main.mainUser section.userRegister form label.labelMed{
+    font-size: 1.5em;
+    align-self: center;
+    width:22.5%;
+}
+
+.userRegister form .medForm{
+    width: 45%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    flex-grow: 0.4;
+}
+
+.userRegister form .bigForm{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.userRegister form .shortForm{
+    width: 22.5%;
+    margin-top: 1%; 
+    margin-bottom: 1%;
+    padding: 1%;
+    flex-grow: 0.2;
+}
+
+.optionsForm{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.optionsForm label{
+    width: 10%;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.labelOptions{
+    width: 1%;  
+    margin: 0;
+    padding: 0;
+}
+
+.userRegister form .radioForm{
+    align-self: center;
+    justify-self: center;
+    width: 5%;
+    height: 1vh;
+    padding: 0;
+    margin: 0;
+}
+
+main.mainUser section form button:hover{
+    background-color: #0022AA;
+}
+/* login and register FINAL */
+/* MAIN FINAL */
 
 /* Media Queries */
 
 /* Phone */
 @media (max-width: 480px) {
-    header section form input{
+    header{
+        justify-content: none;
+    }
+
+    .header-top{
+        display: flex;
+    }
+
+    header .header-top img{
+        width: 50%;
+        padding-right: 2%;
+    }
+
+    header .header-top form{
         width:50%;
+    }
+
+    header .header-top form input{
+        width: 45vw;
+        height: 5vh;
+        border-radius: 1rem;
+        border: 0px;
+        font-size: 1.03rem;
+    }
+
+    header .header-top form button{
+        border: 0px;
+        width: 5vw;
+        height: 5.4vh;
+        position: absolute;
+        left: 88%;
+        background-color: rgba(0,0,0,0);
+    }
+
+    header .header-top p{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        padding-left: 15%;
     }
 
     header nav{
         display: none;
     }
 
-    main section article h4{
-        display: none;
-    }
-
-    main section article{
-        box-shadow: none;
-    }
-
     .burger-menu{
         display: flex;
-        visibility: visible;
+        justify-content: center;
+        align-items: center;
+        background-color: #1259c3;
+        width: 7%;
+        border-radius: 25%;
+        padding: 1%;
     }
     
     .burger-menu i{
-        background-color: #1259c3;
         color: white;
         padding: 2%;
-        border-radius: 25%;
         margin-bottom: 1.5%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section{
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* Home */
+    /* MAIN */
+    main.mainHome section article h4{
+        visibility: visible;
+    }
+
+    main.mainHome section article{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        width: 100%;
+    }
+    /* MAIN FINAL */
+    /* Home Final */
+
+    /* register */
+    .userRegister form .medForm{
+        width: 100%;
+        padding: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        flex-grow: 0.4;
+    }
+    
+    .userRegister form .bigForm{
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+    
+    .userRegister form .shortForm{
+        width: 100%;
+        margin-top: 1%; 
+        margin-bottom: 1%;
+        padding: 1%;
+        flex-grow: 0.2;
     }
 }
 
 /* Tablets and larger phones */
 @media (min-width: 481px ) and (max-width:768px) {
-
+    main.mainHome section{
+        justify-content: flex-start;
+    }
+    
+    main.mainHome section article{
+        width: 25%;
+    }
 }
