@@ -37,7 +37,7 @@ header .header-top p{
 }
 
 header .header-top img{
-    width: 20%;
+    width: 10%;
     flex-grow: 0.3;
 }
 header .header-top form{
@@ -115,7 +115,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 1%;
+    padding: 1% 1%;
     color: #666;
 }
 
@@ -143,7 +143,7 @@ footer p{
 }
 
 footer section i:hover{
-    color: #0022AA;
+    color: #02145b;
 }
 
 /* FOOTER FINAL */
